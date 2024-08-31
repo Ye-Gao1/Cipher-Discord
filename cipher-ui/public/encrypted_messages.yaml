@@ -1,10 +1,15 @@
 '639195093873721356':
-- encrypted: RiJvs|7sPvh
-  key: key
-  message: Hello World
-- encrypted: '''sCwr'
-  key: World
-  message: Hello
-- encrypted: WeDDK=#rGlv
-  key: password
-  message: Hello World
+  keys:
+    DiscordPassword: password123
+    Key2: World
+    password: Key1
+  messages:
+  - encrypted: RiJvs|7sPvh
+    key: key
+    message: Hello World
+  - encrypted: '''sCwr'
+    key: World
+    message: Hello
+  - encrypted: WeDDK=#rGlv
+    key: password
+    message: Hello World
