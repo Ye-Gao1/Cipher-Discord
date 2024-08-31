@@ -2,3 +2,9 @@
 - encrypted: RiJvs|7sPvh
   key: key
   message: Hello World
+- encrypted: '''sCwr'
+  key: World
+  message: Hello
+- encrypted: WeDDK=#rGlv
+  key: password
+  message: Hello World

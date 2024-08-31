@@ -1,14 +1,14 @@
 import discord
 from discord import app_commands
-import random
+import random, os
 import yaml
-import os
+TOKEN = os.environ["TOKEN"]
 
 characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 !@#$%^&*()-_+=`~;:'[]{}|<>,./?\"\\"
 character_count = len(characters)
 
 saved_keys = {}
-yaml_file = "encrypted_messages.yaml"
+yaml_file = "./cipher-ui/public/encrypted_messages.yaml"
 
 if os.path.exists(yaml_file):
     with open(yaml_file, "r") as file:
@@ -86,4 +86,4 @@ async def decrypt_message(interaction: discord.Interaction, encrypted_message: s
     decrypted_message = decrypt(encrypted_message, adjusted_key)
     await interaction.response.send_message(f"Decrypted message: {decrypted_message}")
 
-client.run()
+client.run(TOKEN)
