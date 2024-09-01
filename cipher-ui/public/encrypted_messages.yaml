@@ -13,3 +13,6 @@
   - encrypted: WeDDK=#rGlv
     key: password
     message: Hello World
+  - encrypted: '&iJ!%v{sP!5'
+    key: Key123
+    message: Hello World
